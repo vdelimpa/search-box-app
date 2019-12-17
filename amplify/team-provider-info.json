@@ -1,0 +1,15 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-search-box-app-dev-221956-authRole",
+            "UnauthRoleArn": "arn:aws:iam::236323590657:role/amplify-search-box-app-dev-221956-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::236323590657:role/amplify-search-box-app-dev-221956-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "amplify-search-box-app-dev-221956-deployment",
+            "UnauthRoleName": "amplify-search-box-app-dev-221956-unauthRole",
+            "StackName": "amplify-search-box-app-dev-221956",
+            "StackId": "arn:aws:cloudformation:eu-west-1:236323590657:stack/amplify-search-box-app-dev-221956/5d8ee1a0-211b-11ea-be83-06ebe7208a7c",
+            "AmplifyAppId": "daru7hz2kakyz"
+        }
+    }
+}
