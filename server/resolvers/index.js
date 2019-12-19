@@ -1,7 +1,7 @@
-const { books } = require('./books')
+const { locations } = require('./locations')
 
 exports.resolvers = {
   Query: {
-    books
+    locations
   }
 }

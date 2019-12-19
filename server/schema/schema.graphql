@@ -1,5 +1,7 @@
-# import Book from "book.graphql"
-
 type Query {
-  books: [Book]
+  locations: [Location]!
+}
+
+type Location {
+  name: String!
 }
