@@ -27,4 +27,3 @@ dist/
 node_modules/
 aws-exports.js
 awsconfiguration.json
-package-lock.json
