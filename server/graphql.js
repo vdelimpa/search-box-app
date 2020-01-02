@@ -1,7 +1,7 @@
 const { ApolloServer } = require('apollo-server-lambda')
 const { importSchema } = require('graphql-import')
 
-const { resolvers } = require('./resolvers')
+const resolvers = require('./resolvers')
 
 const typeDefs = importSchema('schema/schema.graphql')
 
