@@ -1,7 +1,14 @@
 type Query {
-  locations: [Location]!
+  locations(place: String!): [Location]!
 }
 
+"""
+Query all locations for a given place
+"""
 type Location {
+  id: ID!
   name: String!
+  city: String
+  country: String
+  region: String
 }
