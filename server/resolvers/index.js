@@ -1,6 +1,6 @@
 const { locations } = require('./locations')
 
-exports.resolvers = {
+module.exports = {
   Query: {
     locations
   }
