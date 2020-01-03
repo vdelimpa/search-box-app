@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "local": "nodemon index.js`", 
+    "local": "nodemon index.js", 
     "test": "jest --verbose  --coverage",
     "watch": "jest --verbose --watch"
   },
