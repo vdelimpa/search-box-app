@@ -171,7 +171,7 @@ ___
 [Lighthouse audits](https://developers.google.com/web/tools/lighthouse) were run in order to access the quality of the app's  performance, accessibility, SEO and more.
 
 <div style="text-align: center; ">
-   <img style="width: 500px;" src="./docs/images/lighthouse-scores.png">
+   <img style="width: 300px;" src="./docs/images/lighthouse-scores.png">
 </div>
 
 ___
