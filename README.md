@@ -186,7 +186,7 @@ ___
 ___
 
 ### Demo
-  <a href="https://master.d1soewjcun776i.amplifyapp.com/">View Demo Live</a>
+  <a href="https://master.d1soewjcun776i.amplifyapp.com/">View Live Demo</a>
 
 <div style="text-align: center; ">
   <img src="./docs/images/demo.gif">
