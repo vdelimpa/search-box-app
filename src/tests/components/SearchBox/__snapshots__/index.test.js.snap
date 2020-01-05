@@ -1,3 +1,357 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Snapshot test should match the snapshot of the SearchBox component render 1`] = `ReactWrapper {}`;
+exports[`Snapshot test should match the snapshot of the SearchBox component render 1`] = `
+<SearchBox
+  label="Pick-up Location"
+  title="Where are you going?"
+>
+  <div
+    className="c-searchbox"
+  >
+    <h2
+      className="c-searchwidget__title"
+    >
+      Where are you going?
+    </h2>
+    <label
+      className="c-form__label"
+      htmlFor="pickupLocation"
+    >
+      Pick-up Location
+    </label>
+    <SearchResults
+      placeholder="city, airport, station, region, district..."
+    >
+      <div>
+        <div
+          className="c-searchwidget__input-container"
+        >
+          <input
+            id="pickupLocation"
+            onChange={[Function]}
+            placeholder="city, airport, station, region, district..."
+            type="text"
+          />
+          <Loader
+            color="#444"
+            css={
+              Object {
+                "map": undefined,
+                "name": "10ub3we",
+                "next": undefined,
+                "styles": "
+  position: absolute;
+  right: 11px;
+  top: calc(50% - 9px);
+",
+                "toString": [Function],
+              }
+            }
+            loading={true}
+            size={15}
+          >
+            <EmotionCssPropInternal
+              __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
+              css={
+                Array [
+                  Object {
+                    "map": undefined,
+                    "name": "ruyg05",
+                    "next": Object {
+                      "name": "animation-s8tf20",
+                      "next": undefined,
+                      "styles": "@keyframes animation-s8tf20{
+  0% {transform: rotate(0deg) scale(1)}
+  50% {transform: rotate(180deg) scale(0.8)}
+  100% {transform: rotate(360deg) scale(1)}
+}",
+                    },
+                    "styles": "
+      background: transparent !important;
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      border: 2px solid;
+      border-color: #444;
+      border-bottom-color: transparent;
+      display: inline-block;
+      animation: animation-s8tf20 0.75s 0s infinite linear;
+      animation-fill-mode: both;
+    ",
+                    "toString": [Function],
+                  },
+                  Object {
+                    "map": undefined,
+                    "name": "10ub3we",
+                    "next": undefined,
+                    "styles": "
+  position: absolute;
+  right: 11px;
+  top: calc(50% - 9px);
+",
+                    "toString": [Function],
+                  },
+                ]
+              }
+            >
+              <div
+                className="css-ye0kpi"
+              />
+            </EmotionCssPropInternal>
+          </Loader>
+        </div>
+        <noscript />
+      </div>
+    </SearchResults>
+  </div>
+</SearchBox>
+`;
+
+exports[`Snapshot test should match the snapshot of the SearchBox component render with the Search Results 1`] = `
+<SearchBox
+  label="Pick-up Location"
+  title="Where are you going?"
+>
+  <div
+    className="c-searchbox"
+  >
+    <h2
+      className="c-searchwidget__title"
+    >
+      Where are you going?
+    </h2>
+    <label
+      className="c-form__label"
+      htmlFor="pickupLocation"
+    >
+      Pick-up Location
+    </label>
+    <SearchResults
+      placeholder="city, airport, station, region, district..."
+    >
+      <div>
+        <div
+          className="c-searchwidget__input-container"
+        >
+          <input
+            id="pickupLocation"
+            onChange={[Function]}
+            placeholder="city, airport, station, region, district..."
+            type="text"
+          />
+          <Loader
+            color="#444"
+            css={
+              Object {
+                "map": undefined,
+                "name": "10ub3we",
+                "next": undefined,
+                "styles": "
+  position: absolute;
+  right: 11px;
+  top: calc(50% - 9px);
+",
+                "toString": [Function],
+              }
+            }
+            loading={false}
+            size={15}
+          />
+        </div>
+        <DropDown
+          locations={
+            Array [
+              Object {
+                "country": "Greece",
+                "name": "Athens Airport",
+                "region": "Attica",
+              },
+              Object {
+                "country": "Greece",
+                "name": "Athens",
+                "region": "Attica",
+              },
+              Object {
+                "country": "United States of America",
+                "name": "Athens",
+                "region": "Texas",
+              },
+              Object {
+                "country": "Greece",
+                "name": "Alimos",
+                "region": "Attica",
+              },
+              Object {
+                "country": "Greece",
+                "name": "Chalandri",
+                "region": "Attica",
+              },
+              Object {
+                "country": "Greece",
+                "name": "Elliniko",
+                "region": "Attica",
+              },
+            ]
+          }
+        >
+          <ol
+            className="c-search-results"
+            role="listbox"
+          >
+            <li
+              aria-selected="false"
+              className="c-search-results__item"
+              id="pickupLocationResultsItem-0"
+              key="pickupLocationResultsItem-0"
+              role="option"
+              tabIndex="-1"
+            >
+              <div
+                className="c-search-results__location-name"
+              >
+                Athens Airport
+              </div>
+              <LocationRegion
+                country="Greece"
+                locations={Array []}
+                region="Attica"
+              >
+                <div
+                  className="c-search-results__location-region"
+                >
+                  Attica, Greece
+                </div>
+              </LocationRegion>
+            </li>
+            <li
+              aria-selected="false"
+              className="c-search-results__item"
+              id="pickupLocationResultsItem-1"
+              key="pickupLocationResultsItem-1"
+              role="option"
+              tabIndex="-1"
+            >
+              <div
+                className="c-search-results__location-name"
+              >
+                Athens
+              </div>
+              <LocationRegion
+                country="Greece"
+                locations={Array []}
+                region="Attica"
+              >
+                <div
+                  className="c-search-results__location-region"
+                >
+                  Attica, Greece
+                </div>
+              </LocationRegion>
+            </li>
+            <li
+              aria-selected="false"
+              className="c-search-results__item"
+              id="pickupLocationResultsItem-2"
+              key="pickupLocationResultsItem-2"
+              role="option"
+              tabIndex="-1"
+            >
+              <div
+                className="c-search-results__location-name"
+              >
+                Athens
+              </div>
+              <LocationRegion
+                country="United States of America"
+                locations={Array []}
+                region="Texas"
+              >
+                <div
+                  className="c-search-results__location-region"
+                >
+                  Texas, United States of America
+                </div>
+              </LocationRegion>
+            </li>
+            <li
+              aria-selected="false"
+              className="c-search-results__item"
+              id="pickupLocationResultsItem-3"
+              key="pickupLocationResultsItem-3"
+              role="option"
+              tabIndex="-1"
+            >
+              <div
+                className="c-search-results__location-name"
+              >
+                Alimos
+              </div>
+              <LocationRegion
+                country="Greece"
+                locations={Array []}
+                region="Attica"
+              >
+                <div
+                  className="c-search-results__location-region"
+                >
+                  Attica, Greece
+                </div>
+              </LocationRegion>
+            </li>
+            <li
+              aria-selected="false"
+              className="c-search-results__item"
+              id="pickupLocationResultsItem-4"
+              key="pickupLocationResultsItem-4"
+              role="option"
+              tabIndex="-1"
+            >
+              <div
+                className="c-search-results__location-name"
+              >
+                Chalandri
+              </div>
+              <LocationRegion
+                country="Greece"
+                locations={Array []}
+                region="Attica"
+              >
+                <div
+                  className="c-search-results__location-region"
+                >
+                  Attica, Greece
+                </div>
+              </LocationRegion>
+            </li>
+            <li
+              aria-selected="false"
+              className="c-search-results__item"
+              id="pickupLocationResultsItem-5"
+              key="pickupLocationResultsItem-5"
+              role="option"
+              tabIndex="-1"
+            >
+              <div
+                className="c-search-results__location-name"
+              >
+                Elliniko
+              </div>
+              <LocationRegion
+                country="Greece"
+                locations={Array []}
+                region="Attica"
+              >
+                <div
+                  className="c-search-results__location-region"
+                >
+                  Attica, Greece
+                </div>
+              </LocationRegion>
+            </li>
+          </ol>
+        </DropDown>
+      </div>
+    </SearchResults>
+  </div>
+</SearchBox>
+`;
