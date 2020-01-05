@@ -4,6 +4,6 @@ exports.constructUrl = (place = "") => {
 }
 
 exports.isValidLocation = (place = "") => {
-  const regex = RegExp(/^([0-9]|[a-z])+([0-9a-z]+)$/)
+  const regex = RegExp(/^([0-9]|[a-z]|[A-Z])+([0-9a-z]+)$/)
   return regex.test(place)
 }

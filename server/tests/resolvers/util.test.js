@@ -4,6 +4,10 @@ describe('isValidLocation', () => {
   test('should return true for alphanumeric location', () => {
     expect(isValidLocation("london12")).toEqual(true)
   });
+
+  test('should return true for alphanumeric uppercase location', () => {
+    expect(isValidLocation("Paris12")).toEqual(true)
+  });
   
   test('should return false for non-alphanumeric location', () => {
     expect(isValidLocation("%$^")).toEqual(false)
