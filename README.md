@@ -1,8 +1,6 @@
-<h1 align="center">Search Box app</h1>  
-<p align="center">
-  ·
+<h1>Search Box app</h1>  
+<p>
   <a href="https://master.d1soewjcun776i.amplifyapp.com/">View Demo</a>
-  ·
 </p>
 
 ## Table of Contents :book:
