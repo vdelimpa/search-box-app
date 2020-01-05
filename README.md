@@ -28,8 +28,9 @@
 * [Demo](#demo)
 
 ## About :star2:
-
-<img src="./docs/images/app.png" alt="App screenshot">
+<div style="text-align: center; ">
+  <img style="width: 500px;" src="./docs/images/app.png" alt="App screenshot">
+</div>
 
 Replica of the Rentalcars.com <em>Pick-up Location Search Widget</em> using the official live data endpoint.
 
@@ -74,8 +75,9 @@ Enter an alphanumeric location and get results regarding where you can pick-up y
 
 ## Technical Approach :triangular_ruler:
 To fully understand the Pick-up location scenario, an initial flowchart was designed via [draw.io](https://draw.io)
-
-<img src="./docs/images/SearchBox-flowchart.jpg">
+<div style="text-align: center; ">
+  <img src="./docs/images/SearchBox-flowchart.jpg">
+</div>
 
 #### Initial steps
 After comprehending the user journey, [Postman](https://www.getpostman.com/) was used in order to make a GET request from the rentalcars.com endpoint and see the format of the data and make decisions around the best languages and frameworks for this project.
@@ -102,11 +104,11 @@ query Locations {
 }
 ```
 
-The [Apollo Client Developer Tools](https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm) for Google Chrome aswell as the Network tab were used in order to check the GraphQL calls that were made.
+The [Apollo Client Developer Tools](https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm) for Google Chrome as well as the Network tab were used in order to check the GraphQL calls that were made.
 ___
 
 #### Server Deployment
-After all the local tests were passing and the local Apollo GraphQL server were set, deployment took place. [AWS Amplify](https://aws.amazon.com/amplify/) and [Serverless](https://serverless.com/) made this part extremely easy as they help in connecting AWS cloud services directly to frontend enviroments. With a simple serverless config and an AWS account, the deployment took place on an AWS Lambda and resulted in exposing a live [AWS endpoint of the server](https://www.apollographql.com/docs/apollo-server/getting-started/#step-8-execute-your-first-query).
+After all the local tests were passing and the local Apollo GraphQL server were set, deployment took place. [AWS Amplify](https://aws.amazon.com/amplify/) and [Serverless](https://serverless.com/) made this part extremely easy as they help in connecting AWS cloud services directly to frontend environments. With a simple serverless config and an AWS account, the deployment took place on an AWS Lambda and resulted in exposing a live [AWS endpoint of the server](https://www.apollographql.com/docs/apollo-server/getting-started/#step-8-execute-your-first-query).
 
 **New server deployment command**
 
@@ -115,8 +117,9 @@ serverless deploy
 ```
 
 ##### AWS Deployment Architecture
-
-<img src="./docs/images/AWSDeploymentArchitecture.png" alt="AWSDeploymentArchitecture">
+<div style="text-align: center; ">
+  <img src="./docs/images/AWSDeploymentArchitecture.png" alt="AWSDeploymentArchitecture">
+</div>
 
 ___
 
@@ -159,15 +162,15 @@ ___
 
 #### Testing
 
-Throught the development of this project, TTD was applied to every step. Unit test using Jest and Enzyme were written to ensure the components behavior and states. Additionally custom hooks were also tested in order to make sure that each usage scenario would still work as expected. Snapshot and VRT tests were also added to test the component at a markup and visual level for changes.
+Through the development of this project, TTD was applied to every step. Unit test using Jest and Enzyme were written to ensure the components behavior and states. Additionally custom hooks were also tested in order to make sure that each usage scenario would still work as expected. Snapshot and VRT tests were also added to test the component at a markup and visual level for changes.
 
 ___
 
 #### Accessibility
-todo
+Tools like Mac OS Voice Over and the [ChromeVox extension](https://chrome.google.com/webstore/detail/chromevox-classic-extensi/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en) where used to test the accessibility levels of this app.
 
 #### QA Testing
-todo
+[React App Polyfill](https://www.npmjs.com/package/react-app-polyfill) NPM package was installed in order to make sure that IE browsers would support the implement functionality. The app was tested in IE 11 on Windows 10 via [Browserstack](https://www.browserstack.com/) and worked as expected.
 
 #### Demo
   <a href="https://master.d1soewjcun776i.amplifyapp.com/">View Demo Live</a>
