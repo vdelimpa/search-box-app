@@ -9,7 +9,6 @@ $font__color--white: #fff;
 $color--neutral: #a4a4a4;
 $color--neautralLight: #e7f4fe;
 $color--darkMustard: #c8ae5b;
-$background-primary--dark: #0a6fba;
 
 $font__size--title: 1.5rem;
 $font__size--label: 0.875rem; 
@@ -190,4 +189,5 @@ ol {
 
 a {
   text-decoration: none;
+  color: $color--darkMustard;
 }
