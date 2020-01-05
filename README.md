@@ -19,10 +19,11 @@
   * [Frontend Development](#frontend-development)
     * [Styling](#styling)
     * [Development](#development)
-    * [Component architecture diagram](#component-architecture-diagram)
+    * [Component Visualisation](#component-visualisation)
   * [Frontend Deployment](#frontend-deployment)
   * [Backend Considerations](#backend-considerations)
   * [Testing](#testing)
+    * [Performance Testing](#performance-testing)
   * [Accessibility](#accessibility)
   * [QA Testing](#qa-testing)
 * [Demo](#demo)
@@ -138,9 +139,11 @@ The best language for this user case seemed to be [React](https://reactjs.org/).
 
 TDD was also a strong part of this stage with the help of Jest and Enzyme. The initial HTML wireframe became a modularised set of components that were stored in a logical order within the src/ folder.
 
-##### Component Architecture Diagram
+##### Component Visualisation
 
-todo
+<div style="text-align: center; ">
+   <img src="./docs/images/componentVisualisation.png">
+</div>
 
 ___
 
@@ -162,11 +165,9 @@ ___
 
 #### Testing
 
-Through the development of this project, TTD was applied to every step. Unit test using Jest and Enzyme were written to ensure the components behavior and states. Additionally custom hooks were also tested in order to make sure that each usage scenario would still work as expected. Snapshot and VRT tests were also added to test the component at a markup and visual level for changes.
+Through the development of this project, TTD was applied to every step. Unit test using Jest and Enzyme were written to ensure the components behavior and states. Additionally custom hooks were also tested in order to make sure that each usage scenario would still work as expected. Snapshot and VRT tests were also added.
 
-___
-
-#### Performance Testing
+##### Performance Testing
 
 [Lighthouse audits](https://developers.google.com/web/tools/lighthouse) were run in order to access the quality of the app's  performance, accessibility, SEO and more.
 
@@ -184,7 +185,9 @@ ___
 #### QA Testing
 [React App Polyfill](https://www.npmjs.com/package/react-app-polyfill) NPM package was installed in order to make sure that IE browsers would support the implement functionality. The app was tested in IE 11 on Windows 10 via [Browserstack](https://www.browserstack.com/) and worked as expected.
 
-#### Demo
+___
+
+### Demo :balloon:
   <a href="https://master.d1soewjcun776i.amplifyapp.com/">View Demo Live</a>
 
 <div style="text-align: center; ">
