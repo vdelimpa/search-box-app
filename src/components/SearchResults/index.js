@@ -25,7 +25,6 @@ const SearchResults = ({ placeholder }) => {
     { variables: { place } },
   )
 
-  // TODO Simple Error Component to display the error message
   if (error) return <div className="error">Error</div>
 
   return (
