@@ -1,7 +1,10 @@
-import React from "react"
+import React from 'react'
+import SearchBox from './components/SearchBox'
+import './index.css'
 
-const App = () => {
-  return <h1>Hello</h1>
-}
-
-export default App;
+const App = () => (
+    <div className="container">
+      <SearchBox /> 
+    </div>
+  )
+export default App
