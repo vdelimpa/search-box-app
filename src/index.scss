@@ -6,6 +6,7 @@ $background__color--mustard: #f3ce56;
 $font__color--greyscale--dark: #333;
 $font__color--neutralDark: #444;
 $font__color--white: #fff;
+$font__color--green: #00874d;
 $color--neutral: #a4a4a4;
 $color--neautralLight: #e7f4fe;
 $color--darkMustard: #c8ae5b;
@@ -189,5 +190,6 @@ ol {
 
 a {
   text-decoration: none;
-  color: $color--darkMustard;
+  color: $font__color--green;
+  font-weight: 500;
 }
