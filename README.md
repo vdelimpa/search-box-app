@@ -166,12 +166,27 @@ Through the development of this project, TTD was applied to every step. Unit tes
 
 ___
 
+#### Performance Testing
+
+[Lighthouse audits](https://developers.google.com/web/tools/lighthouse) were run in order to access the quality of the app's  performance, accessibility, SEO and more.
+
+<div style="text-align: center; ">
+   <img style="width: 500px;" src="./docs/images/lighthouse-scores.png">
+</div>
+
+___
+
 #### Accessibility
 Tools like Mac OS Voice Over and the [ChromeVox extension](https://chrome.google.com/webstore/detail/chromevox-classic-extensi/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en) where used to test the accessibility levels of this app.
+
+___
 
 #### QA Testing
 [React App Polyfill](https://www.npmjs.com/package/react-app-polyfill) NPM package was installed in order to make sure that IE browsers would support the implement functionality. The app was tested in IE 11 on Windows 10 via [Browserstack](https://www.browserstack.com/) and worked as expected.
 
 #### Demo
   <a href="https://master.d1soewjcun776i.amplifyapp.com/">View Demo Live</a>
-<img src="./docs/images/ezgif.com-video-to-gif.gif">
+
+<div style="text-align: center; ">
+  <img src="./docs/images/demo.gif">
+</div>
