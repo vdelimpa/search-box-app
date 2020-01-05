@@ -142,7 +142,7 @@ TDD was also a strong part of this stage with the help of Jest and Enzyme. The i
 ##### Component Visualisation
 
 <div style="text-align: center; ">
-   <img src="./docs/images/componentVisualisation.png">
+   <img src="./docs/images/ComponentVisualisation.png">
 </div>
 
 ___
