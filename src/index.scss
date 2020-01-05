@@ -1,0 +1,193 @@
+/*------------------------------------*\
+    # SEARCH BOX
+\*------------------------------------*/
+
+$background__color--mustard: #f3ce56;
+$font__color--greyscale--dark: #333;
+$font__color--neutralDark: #444;
+$font__color--white: #fff;
+$color--neutral: #a4a4a4;
+$color--neautralLight: #e7f4fe;
+$color--darkMustard: #c8ae5b;
+$background-primary--dark: #0a6fba;
+
+$font__size--title: 1.5rem;
+$font__size--label: 0.875rem; 
+$font__size--location-name: 1.3rem;
+$font__size--supporting-text: 1.142rem;
+$font__size--text: 1rem;
+
+$font__weight--title: 500;
+$font__weight--label: 400;
+
+$border-radius: 4px;
+
+body {
+  font-family: 'Ubuntu', 'Segoe UI',Tahoma,sans-serif;
+  font-size: 16px;
+}
+
+.main {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 768px) {
+  .main {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .main {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .main {
+    width: 1170px;
+  }
+}
+
+.container {
+  direction: ltr;
+  text-align: left;
+  display: block;
+}
+
+h1 {
+  color: $font__color--greyscale--dark;
+  font-weight: 500;
+}
+
+.c-searchbox {
+  margin: 0;
+  padding: 0.5rem;
+  letter-spacing: -.4px;
+  background-color: $background__color--mustard;
+
+  .c-searchwidget__title {  
+    font-size: $font__size--title;
+    font-weight: $font__weight--title;
+    line-height: 2rem;
+    margin: 0 0 1rem 0;
+    color: $font__color--greyscale--dark;
+  }
+}
+
+@media(min-width:30em) {
+	.c-searchbox {
+		padding: 1.5rem;
+		letter-spacing: 0;
+	}
+}
+
+@media(min-width:48em) and (max-width:63.99em) {
+	.c-searchbox {
+		width: 512px;
+		margin: 0 auto;
+	}
+}
+
+@media(min-width:64em) {
+	.c-searchbox {
+		width: 480px;
+	}
+}
+
+@media(max-width:47.99em) {
+	.c-searchbox__title {
+		font-size: 1.5rem;
+	}
+}
+
+.c-form__label {
+  display: block;
+  line-height: 1.25rem;
+  padding: 0 0 4px;
+  font-size: $font__size--label;
+  font-weight: $font__weight--label;
+  color: $font__color--neutralDark;
+  font-family: 'Open Sans','Segoe UI',Tahoma,sans-serif;
+}
+
+.c-searchwidget__input-container {
+  display: block;
+  position: relative;
+  border-color: $color--darkMustard;
+
+  input[type="text"] {
+    font-size: $font__size--text;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 48px;
+    border: 1px solid $color--neutral;
+    border-radius: $border-radius;
+    min-width: 49px;
+    padding: 8px 16px;
+
+  }
+
+  input::placeholder {
+    font-size: $font__size--label;
+    color: $color--neutral;
+  }
+}
+
+.c-search-results {
+  width: 100%;
+  border-radius: $border-radius;
+  background: #fff;
+  margin-top: 1px;
+  font-family: 'Open Sans','Segoe UI',Tahoma,sans-serif;
+
+    &__item {
+    display: block;
+    margin-left: 0;
+    padding: 8px 16px;
+    font-size: $font__size--label;
+    cursor: pointer;
+  
+      &:hover {
+        background-color: $color--neautralLight;
+      }
+    }
+    
+    &__location-name {
+      
+      font-size: 14px;
+      line-height: 1.25rem;
+    }
+
+    &__location-region {
+      font-size: 12px;
+      line-height: 1.25rem;
+    }
+
+}
+
+ol {
+  display: table;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.githubLink, .creator {
+  font-family: 'Ubuntu','Open Sans','Segoe UI',Tahoma,sans-serif;
+  display: inline-block;
+  padding-right: 3px;
+  font-weight: 200;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.information {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}

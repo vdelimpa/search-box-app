@@ -1,0 +1,139 @@
+/*------------------------------------*\
+    # SEARCH BOX
+\*------------------------------------*/
+body {
+  font-family: 'Ubuntu', 'Segoe UI',Tahoma,sans-serif;
+  font-size: 16px; }
+
+.main {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 768px) {
+  .main {
+    width: 750px; } }
+
+@media (min-width: 992px) {
+  .main {
+    width: 970px; } }
+
+@media (min-width: 1200px) {
+  .main {
+    width: 1170px; } }
+
+.container {
+  direction: ltr;
+  text-align: left;
+  display: block; }
+
+h1 {
+  color: #333;
+  font-weight: 500; }
+
+.c-searchbox {
+  margin: 0;
+  padding: 0.5rem;
+  letter-spacing: -.4px;
+  background-color: #f3ce56; }
+
+.c-searchbox .c-searchwidget__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2rem;
+  margin: 0 0 1rem 0;
+  color: #333; }
+
+@media (min-width: 30em) {
+  .c-searchbox {
+    padding: 1.5rem;
+    letter-spacing: 0; } }
+
+@media (min-width: 48em) and (max-width: 63.99em) {
+  .c-searchbox {
+    width: 512px;
+    margin: 0 auto; } }
+
+@media (min-width: 64em) {
+  .c-searchbox {
+    width: 480px; } }
+
+@media (max-width: 47.99em) {
+  .c-searchbox__title {
+    font-size: 1.5rem; } }
+
+.c-form__label {
+  display: block;
+  line-height: 1.25rem;
+  padding: 0 0 4px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #444;
+  font-family: 'Open Sans','Segoe UI',Tahoma,sans-serif; }
+
+.c-searchwidget__input-container {
+  display: block;
+  position: relative;
+  border-color: #c8ae5b; }
+
+.c-searchwidget__input-container input[type="text"] {
+  font-size: 1rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 48px;
+  border: 1px solid #a4a4a4;
+  border-radius: 4px;
+  min-width: 49px;
+  padding: 8px 16px; }
+
+.c-searchwidget__input-container input::placeholder {
+  font-size: 0.875rem;
+  color: #a4a4a4; }
+
+.c-search-results {
+  width: 100%;
+  border-radius: 4px;
+  background: #fff;
+  margin-top: 1px;
+  font-family: 'Open Sans','Segoe UI',Tahoma,sans-serif; }
+
+.c-search-results__item {
+  display: block;
+  margin-left: 0;
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  cursor: pointer; }
+
+.c-search-results__item:hover {
+  background-color: #e7f4fe; }
+
+.c-search-results__location-name {
+  font-size: 14px;
+  line-height: 1.25rem; }
+
+.c-search-results__location-region {
+  font-size: 12px;
+  line-height: 1.25rem; }
+
+ol {
+  display: table;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.githubLink, .creator {
+  font-family: 'Ubuntu','Open Sans','Segoe UI',Tahoma,sans-serif;
+  display: inline-block;
+  padding-right: 3px;
+  font-weight: 200;
+  font-size: 13px;
+  margin-bottom: 20px; }
+
+.information {
+  display: flex; }
+
+a {
+  text-decoration: none; }
