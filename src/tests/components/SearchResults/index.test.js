@@ -79,28 +79,6 @@ describe('Search Results', () => {
     expect(wrapper.find('DropDown').prop('locations')).toEqual(graphQLResponse.data.locations)
   })
 
-  xit('should call onChange prop when input is filled with text', () => {
-    useDebounce.mockReturnValue('athens')
-    useQuery.mockReturnValue(graphQLResponse)
-    const wrapper = mount(<SearchResults />)
-    // expect(wrapper.find('DropDown').prop('locations')).toEqual(graphQLResponse.data.locations)
-
-    //   const onSearchMock = jest.fn();
-    //   const event = {
-    //     preventDefault() {},
-    //     target: { value: 'the-value' }
-    //   };
-    //   const component = mount(<SearchResults onSearch={onSearchMock} />);
-    //   component.find('input').simulate('change', event);
-    //   expect(onSearchMock).toBeCalledWith('the-value');
- 
-    const mockMyEventHandler = jest.fn()
-    wrapper.setProps({ onChange: mockMyEventHandler })
-    wrapper.find('input').simulate('change', '', { value: ['val'] })
-    expect(mockMyEventHandler).toHaveBeenCalledWith(['val'])
-
-  })
-
   it('should not render the DropDown component when loading is true and data is not available', () => {
     useDebounce.mockReturnValue('athens')
     useQuery.mockReturnValue({ loading: true })
@@ -108,7 +86,7 @@ describe('Search Results', () => {
     expect(wrapper.find('noscript').exists()).toEqual(true)
   })
 
-  test('should render the error text when there is an error', () => {
+  it('should render the error text when there is an error', () => {
     useDebounce.mockReturnValue('athens')
     useQuery.mockReturnValue({ error: true })
     const wrapper = mount(<SearchResults />)

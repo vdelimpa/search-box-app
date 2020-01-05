@@ -1,63 +1,14 @@
 import React from 'react'
-import { MockedProvider } from '@apollo/react-testing'
-import TestRenderer from 'react-test-renderer';
+import ReactDOM from 'react-dom'
 
-import Root from '../index'
-import locationsQuery from '../queries'
-
-const mocks = [
-  {
-    request: {
-      query: locationsQuery,
-      variables: {
-        place: 'athens',
-      },
-    },
-    result: {
-      "data": {
-        "locations": [
-          {
-            "name": "Athens Airport",
-            "region": "Attica",
-            "country": "Greece"
-          },
-          {
-            "name": "Athens",
-            "region": "Attica",
-            "country": "Greece"
-          },
-          {
-            "name": "Athens",
-            "region": "Texas",
-            "country": "United States of America"
-          },
-          {
-            "name": "Alimos",
-            "region": "Attica",
-            "country": "Greece"
-          },
-          {
-            "name": "Chalandri",
-            "region": "Attica",
-            "country": "Greece"
-          },
-          {
-            "name": "Elliniko",
-            "region": "Attica",
-            "country": "Greece"
-          }
-        ]
-      }
-    },
-  },
-]
+import App from '../App'
 
 jest.mock('react-dom', () => ({ render: jest.fn() }))
 
-xit('renders without error', () => {
-  TestRenderer.create(
-    <MockedProvider mocks={mocks} addTypename={false}>
-      <Root />
-    </MockedProvider>,
-  );
-});
+test('should render without crashing', () => {
+  const div = document.createElement('div')
+  div.setAttribute('id', 'root')
+  document.body.appendChild(div);
+  require('..')
+  expect(ReactDOM.render).toHaveBeenCalledWith(<App />, div);
+})

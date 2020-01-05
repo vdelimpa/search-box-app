@@ -1,8 +1,63 @@
 import React from 'react'
-import { shallow } from 'enzyme'
-import App from '../App'
+import { MockedProvider } from '@apollo/react-testing'
+import TestRenderer from 'react-test-renderer';
 
-it('renders the App component', () => {
-  const wrapper = shallow(<App/>)
-  expect(wrapper.find('SearchBox').exists()).toEqual(true)
+import App from '../App'
+import { locationsQuery } from '../queries'
+
+const mocks = [
+  {
+    request: {
+      query: locationsQuery,
+      variables: {
+        place: 'athens',
+      },
+    },
+    result: {
+      "data": {
+        "locations": [
+          {
+            "name": "Athens Airport",
+            "region": "Attica",
+            "country": "Greece"
+          },
+          {
+            "name": "Athens",
+            "region": "Attica",
+            "country": "Greece"
+          },
+          {
+            "name": "Athens",
+            "region": "Texas",
+            "country": "United States of America"
+          },
+          {
+            "name": "Alimos",
+            "region": "Attica",
+            "country": "Greece"
+          },
+          {
+            "name": "Chalandri",
+            "region": "Attica",
+            "country": "Greece"
+          },
+          {
+            "name": "Elliniko",
+            "region": "Attica",
+            "country": "Greece"
+          }
+        ]
+      }
+    },
+  },
+]
+
+jest.mock('react-dom', () => ({ render: jest.fn() }))
+
+it('renders without error', () => {
+  TestRenderer.create(
+    <MockedProvider mocks={mocks} addTypename={false}>
+      <App />
+    </MockedProvider>,
+  )
 })
