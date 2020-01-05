@@ -4,47 +4,11 @@ import { useQuery } from '@apollo/react-hooks'
 
 import SearchResults from '../../../components/SearchResults'
 import useDebounce from '../../../components/SearchResults/useDebounce'
+import { graphQLResponse } from '../../mockData'
 
 jest.mock('@apollo/react-hooks')
 jest.mock('../../../components/SearchResults/useDebounce')
 
-const graphQLResponse = {
-  "data": {
-    "locations": [
-      {
-        "name": "Athens Airport",
-        "region": "Attica",
-        "country": "Greece"
-      },
-      {
-        "name": "Athens",
-        "region": "Attica",
-        "country": "Greece"
-      },
-      {
-        "name": "Athens",
-        "region": "Texas",
-        "country": "United States of America"
-      },
-      {
-        "name": "Alimos",
-        "region": "Attica",
-        "country": "Greece"
-      },
-      {
-        "name": "Chalandri",
-        "region": "Attica",
-        "country": "Greece"
-      },
-      {
-        "name": "Elliniko",
-        "region": "Attica",
-        "country": "Greece"
-      }
-    ]
-  },
-  "loading": false
-}
 
 afterEach(() => {    
   jest.clearAllMocks()

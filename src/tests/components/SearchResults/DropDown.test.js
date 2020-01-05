@@ -2,26 +2,7 @@ import React from 'react'
 import { mount } from 'enzyme'
 
 import DropDown from '../../../components/SearchResults/DropDown'
-
-const mockProps = {
-  locations: [
-    {
-      "name": "Athens Airport",
-      "region": "Attica",
-      "country": "Greece"
-    },
-    {
-      "name": "Athens",
-      "region": "Attica",
-      "country": "Greece"
-    },
-    {
-      "name": "Athens",
-      "region": "Texas",
-      "country": "United States of America"
-    }
-  ]
-}
+import { mockProps } from '../../mockData'
 
 const render = (props = mockProps) => mount(<DropDown {...props} />)
 
