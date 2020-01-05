@@ -32,6 +32,7 @@
     "start-app": "react-scripts start",
     "build": "npm-run-all -p build-css build-app",
     "start": "npm-run-all -p watch-css start-app",
+    "lint": "eslint src/**/*.js",
     "test": "react-scripts test --verbose --coverage --watchAll=false",
     "test-watch": "react-scripts test --verbose",
     "test-e2e": "nightwatch -c nightwatch.json",
@@ -53,6 +54,8 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/react-hooks": "^3.2.1"
+    "@testing-library/react-hooks": "^3.2.1",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.17.0"
   }
 }
