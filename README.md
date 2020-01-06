@@ -89,7 +89,7 @@ A server was setup locally using [GraphQL Apollo](https://www.apollographql.com/
 
 When the server was made to respect the schema, query executions took place within the [Apollo Playground](https://www.apollographql.com/docs/apollo-server/getting-started/#step-8-execute-your-first-query) to test the GraphQL  responses.
 
-##### [Deployed version of the server's playground on AWS](https://www.apollographql.com/docs/apollo-server/getting-started/#step-8-execute-your-first-query) :link:
+##### [Deployed version of the server's playground on AWS](https://wjg3rv8ntj.execute-api.us-east-1.amazonaws.com/dev/graphql) 
 
 ##### GraphQL Query used
 
