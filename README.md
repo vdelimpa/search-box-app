@@ -163,7 +163,7 @@ ___
 
 #### Testing
 
-Through the development of this project, TTD was applied to every step. Unit test using Jest and Enzyme were written to ensure the components behavior and states. Additionally custom hooks were also tested in order to make sure that each usage scenario would still work as expected. Snapshot and VRT tests were also added.
+Through the development of this project, TTD was applied to every step. Unit tests using Jest and Enzyme were written to ensure the components behavior and states. Additionally custom hooks were also tested in order to make sure that each usage scenario would still work as expected. Snapshot and VRT tests were also added.
 
 ##### Performance Testing
 
