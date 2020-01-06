@@ -107,7 +107,7 @@ The [Apollo Client Developer Tools](https://chrome.google.com/webstore/detail/ap
 ___
 
 #### Server Deployment
-After all the local tests were passing and the local Apollo GraphQL server were set, deployment took place. [AWS Amplify](https://aws.amazon.com/amplify/) and [Serverless](https://serverless.com/) made this part extremely easy as they help in connecting AWS cloud services directly to frontend environments. With a simple serverless config and an AWS account, the deployment took place on an AWS Lambda and resulted in exposing a live [AWS endpoint of the server](https://www.apollographql.com/docs/apollo-server/getting-started/#step-8-execute-your-first-query).
+After all the local tests were passing and the local Apollo GraphQL server were set, deployment took place. [AWS Amplify](https://aws.amazon.com/amplify/) and [Serverless](https://serverless.com/) made this part extremely easy as they help in connecting AWS cloud services directly to frontend environments. With a simple serverless config and an AWS account, the deployment took place on an AWS Lambda and resulted in exposing a live [AWS endpoint of the server](https://wjg3rv8ntj.execute-api.us-east-1.amazonaws.com/dev/graphql).
 
 **New server deployment command**
 
@@ -127,7 +127,7 @@ ___
 ##### Styling
 With the help of the flowchart in terms of visualising the user journey and the elements examination of the rentalcars.com search box, the main UI structure was implemented in plain HTML in order to work as the basis of the app. The next step was to practice TTD and write tests regarding the visual component expected classes on these elements.
 
-In order to see some results coming back from the basic UI that had been built at that point, mock data was used from the GraphQL response. This mock data was also used to write tests on the expected results based on the entered location. When the mock data prototype worked, real data was used from the [AWS deployed server](https://www.apollographql.com/docs/apollo-server/getting-started/#step-8-execute-your-first-query).
+In order to see some results coming back from the basic UI that had been built at that point, mock data was used from the GraphQL response. This mock data was also used to write tests on the expected results based on the entered location. When the mock data prototype worked, real data was used from the [AWS deployed server](https://wjg3rv8ntj.execute-api.us-east-1.amazonaws.com/dev/graphql).
 
 Next, styling took place with the help of [Sass](https://sass-lang.com/) in order to make the Search Box look like its live version. [Storybook](https://storybook.js.org/) was considered, however in such a small application it would have been an overkill.
 
