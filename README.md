@@ -36,7 +36,7 @@ Replica of the Rentalcars.com <em>Pick-up Location Search Widget</em> using the 
 ### Built with
 The following tools and libraries were used
 
-[<img src="https://img.shields.io/badge/-ReactJs-blue">](https://reactjs.org/) [<img src="https://img.shields.io/badge/-SASS-purple">](https://sass-lang.com/) [<img src="https://img.shields.io/badge/-GraphQL-pink">](https://graphql.org/) [<img src="https://img.shields.io/badge/-Apollo-purple">](https://www.apollographql.com/) [<img src="https://img.shields.io/badge/-Serverless-orange">](https://serverless.com/) [<img src="https://img.shields.io/badge/-AWS_Amplify-yellow">](https://aws.amazon.com/amplify/) [<img src="https://img.shields.io/badge/-Jest-green">](https://jestjs.io/) [<img src="https://img.shields.io/badge/-Enzyme-red">](https://airbnb.io/enzyme/)
+[<img src="https://img.shields.io/badge/-ReactJs-blue">](https://reactjs.org/) [<img src="https://img.shields.io/badge/-SASS-purple">](https://sass-lang.com/) [<img src="https://img.shields.io/badge/-GraphQL-pink">](https://graphql.org/) [<img src="https://img.shields.io/badge/-Apollo-purple">](https://www.apollographql.com/) [<img src="https://img.shields.io/badge/-Serverless-orange">](https://serverless.com/) [<img src="https://img.shields.io/badge/-AWS_Amplify-yellow">](https://aws.amazon.com/amplify/) [<img src="https://img.shields.io/badge/-Jest-green">](https://jestjs.io/) [<img src="https://img.shields.io/badge/-Enzyme-red">](https://airbnb.io/enzyme/) [<img src="https://img.shields.io/badge/-ESLiint-purple">](https://eslint.org/)
 
 ## Installation
 
