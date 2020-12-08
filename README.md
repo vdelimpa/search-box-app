@@ -1,7 +1,4 @@
 <h1>Search Box app</h1>  
-<p>
-  <a href="https://master.d1soewjcun776i.amplifyapp.com/">View Demo</a>
-</p>
 
 ## Table of Contents :book:
 
@@ -186,8 +183,6 @@ ___
 ___
 
 ### Demo
-  <a href="https://master.d1soewjcun776i.amplifyapp.com/">View Live Demo</a>
-
 <div style="text-align: center; ">
   <img src="./docs/images/demo.gif">
 </div>
